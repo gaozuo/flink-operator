@@ -1,0 +1,83 @@
+################################################################################
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+# limitations under the License.
+################################################################################
+
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:
+  name: sql-hr
+  namespace: flink
+spec:
+  image:
+  flinkVersion: v1_17
+  flinkConfiguration:
+    state.backend: rocksdb
+    state.backend.incremental: "true"
+    execution.checkpointing.interval: "15s"
+    execution.checkpointing.timeout: "1800"
+    taskmanager.memory.managed.fraction: '0.6'
+    execution.checkpointing.tolerable-failed-checkpoints: "3"
+    taskmanager.numberOfTaskSlots: "3"
+    state.savepoints.dir: file:///flink-data/hr/savepoints
+    state.checkpoints.dir: file:///flink-data/hr/checkpoints
+    high-availability.type: kubernetes
+    high-availability.storageDir: file:///flink-data/hr/ha
+    #s3.access-key: KHICFVBBL4OUNAAC
+    #s3.secret-key: 5LQRJRBVNKANQS4ODQH1XX54UI3F2C0O
+    #s3.endpoint: http://minio.s3-hr
+    #s3.path.style.access: "true"
+    table.exec.source.cdc-events-duplicate: "true"
+    #restart-strategy: fixed-delay
+    #restart-strategy.fixed-delay.attempts: 2147483647
+    FS_S3A_ENDPOINT: "http://ZJJTOSSHA.zjjt.oss.ccccltd.cn:8082"
+    FS_S3A_ACCESS_KEY: "PVOJMVR9EUPB909TAP8N"
+    FS_S3A_SECRET_KEY: "pN1F8PuiglEvk3yHCRG0VziYsoKBETWUSidWVPDy"
+    FS_S3A_SSL_ENABLED: false
+  ingress:
+    template: "{{name}}.{{namespace}}.flink.dc.hrproject"
+    className: "traefik"
+  serviceAccount: flink
+  jobManager:
+    resource:
+      memory: "1500m"
+      cpu: 1
+  taskManager:
+    replicas: 2
+    resource:
+      memory: "2048m"
+      cpu: 3
+  podTemplate:
+    spec:
+      containers:
+        - name: flink-main-container
+          volumeMounts:
+            - mountPath: /flink-data
+              name: flink-volume
+      volumes:
+        - name: flink-volume
+          hostPath:
+            # directory location on host
+            path: /data1/flink-data
+            # this field is optional
+            type: Directory
+  job:
+    jarURI: local:///opt/flink/usrlib/sql-runner.jar
+    args: ["/opt/flink/usrlib/sql-scripts/hr-doc.sql"]
+    parallelism: 6
+    upgradeMode: savepoint
+    state: running
+    savepointTriggerNonce: 0

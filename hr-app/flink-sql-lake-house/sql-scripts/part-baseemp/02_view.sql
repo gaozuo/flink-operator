@@ -1,0 +1,151 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+CREATE TABLE `HR_SOURCE_PART_EMPINFO` (
+    `ts` TIMESTAMP(3),
+    `empid_key` STRING NOT NULL,
+    `certno_key` STRING,
+    `empid` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `empcode` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `name` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `namespell` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `enname` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `nameused` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `certtype` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `certno` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `sex` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `age` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `birthday` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `birthplace` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `resplace` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `resnature` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `nationnality` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `nation` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `nativeplace` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `marry` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `worktime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `sociano` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `phone` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `homeaddress` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `email` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `postalcode` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `optor` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `opttime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `optorg` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `bestedu` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `highest` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `bestpropost` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `postions` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `politicsfaces` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `workprof` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `bestdegree` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `contractunit` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `photo` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `mainprofcotegory` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `recruitment` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `depositunit` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `retirementdate` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `positiongrade` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `retirementorg` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `retirementposition` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `empidentity` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `state` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `studyprof` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `socialtype1` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `socialcode1` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `socialtype2` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `socialcode2` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `annuityno` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `housingfund` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `note` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `techprof` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `landline_telephone_number` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>, --放开
+    `fax` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `room_number` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>, --放开
+    `issolve` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `health` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `globalroaming` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `proftechqua_no` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `sno` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `dept_rules` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `personnelcategory` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `hierarchy` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `ctrank` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `entercccctime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `entrtwostagetime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `foreignlevel` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `interruptedtime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `entercttime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `enterctmode` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `socialstartmonth` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `gjjstartmonth` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `salaryscale` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `payroll` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `isgzsb` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `isgzgjj` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `isprimaryqynj` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `startingtime` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `qynjistransfer` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shjjobnumber` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>, --放开
+    `shjrank` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shjemptype` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shjtalentlevel` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shjtalenttype` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shjtalentcategory` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shjdutystation` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `tagstatus` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shj_zytxrc` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shj_wdyw` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shj_jwry` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shj_pqz` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shj_rcgx` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `shj_ispro` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `tagstatus_time` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `isarmycadres` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    `transferplace` ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    working_coid_name ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    working_coid_orule ROW<`text` ARRAY<STRING>
+        ,`value` ARRAY<STRING>>,
+    working_dept_name ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    working_dept_orule ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    post ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    positiongradenorm ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    education ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    degree ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    college ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    profname ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    proftechqua ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    mainprof0 ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    safe_code ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    other_code ROW<`text` ARRAY<STRING>,`value` ARRAY<STRING>>,
+    PRIMARY KEY (`empid_key`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'upsert-kafka',
+    'key.avro-confluent.schema-registry.url' = 'http://schemaregistry.confluent:8081',
+    'key.format' = 'avro-confluent',
+    'properties.bootstrap.servers' = 'kafka.confluent:9092',
+    'properties.group.id' = 'HR_SOURCE_PART_EMPINFO',
+    'topic' = 'HR_SOURCE_PART_EMPINFO',
+    'value.avro-confluent.schema-registry.url' = 'http://schemaregistry.confluent:8081',
+    'value.format' = 'avro-confluent',
+    'sink.buffer-flush.max-rows' = '4000000',
+    'sink.buffer-flush.interval' = '1200s'
+);
+
+INSERT INTO HR_SOURCE_PART_EMPINFO SELECT `V1202_HR_EMP_BASICINFO`.`TS` AS `ts`, `V1202_HR_EMP_BASICINFO`.`EMPID` AS `empid_key`, `CERTNO` AS `certno_key`, ROW( ARRAY[ `V1202_HR_EMP_BASICINFO`.`EMPID` ], ARRAY[ `V1202_HR_EMP_BASICINFO`.`EMPID` ] ) AS `empid`, ROW( ARRAY[ `EMPCODE` ], ARRAY[ `EMPCODE` ] ) AS `empcode`, ROW(ARRAY[ `V1202_HR_EMP_BASICINFO`.NAME ], ARRAY[ `V1202_HR_EMP_BASICINFO`.NAME ]) AS `name`, ROW( ARRAY[ `NAMESPELL` ], ARRAY[ `NAMESPELL` ] ) AS `namespell`, ROW( ARRAY[ `ENNAME` ], ARRAY[ `ENNAME` ] ) AS `enname`, ROW( ARRAY[ `NAMEUSED` ], ARRAY[ `NAMEUSED` ] ) AS `nameused`, ROW( ARRAY[ `CERTTYPE` ], ARRAY[ `CERTTYPE` ] ) AS `certtype`, ROW( ARRAY[ `CERTNO` ], ARRAY[ `CERTNO` ] ) AS `certno`, ROW(ARRAY[ `SEX` ], ARRAY[ `SEX` ]) AS `sex`, ROW(ARRAY[ `AGE` ], ARRAY[ `AGE` ]) AS `age`, ROW( ARRAY[ `BIRTHDAY` ], ARRAY[ `BIRTHDAY` ] ) AS `birthday`, ROW( ARRAY[birthplace_dict.NAME], ARRAY[ `BIRTHPLACE` ] ) AS `birthplace`, ROW( ARRAY[resplace_dict.NAME], ARRAY[ `RESPLACE` ] ) AS `resplace`, ROW( ARRAY[resnature_dict.NAME], ARRAY[ `RESNATURE` ] ) AS `resnature`, ROW( ARRAY[ `NATIONNALITY` ], ARRAY[ `NATIONNALITY` ] ) AS `nationnality`, ROW( ARRAY[ `NATION` ], ARRAY[ `NATION` ] ) AS `nation`, ROW( ARRAY[nativeplace_dict.NAME], ARRAY[ `NATIVEPLACE` ] ) AS `nativeplace`, ROW(ARRAY[ `MARRY` ], ARRAY[ `MARRY` ]) AS `marry`, ROW( ARRAY[ `WORKTIME` ], ARRAY[ `WORKTIME` ] ) AS `worktime`, ROW( ARRAY[ `SOCIANO` ], ARRAY[ `SOCIANO` ] ) AS `sociano`, ROW(ARRAY[ `PHONE` ], ARRAY[ `PHONE` ]) AS `phone`, ROW( ARRAY[ `HOMEADDRESS` ], ARRAY[ `HOMEADDRESS` ] ) AS `homeaddress`, ROW(ARRAY[ `EMAIL` ], ARRAY[ `EMAIL` ]) AS `email`, ROW( ARRAY[ `POSTALCODE` ], ARRAY[ `POSTALCODE` ] ) AS `postalcode`, ROW(ARRAY[ `OPTOR` ], ARRAY[ `OPTOR` ]) AS `optor`, ROW( ARRAY[ `OPTTIME` ], ARRAY[ `OPTTIME` ] ) AS `opttime`, ROW( ARRAY[ `OPTORG` ], ARRAY[ `OPTORG` ] ) AS `optorg`, ROW( ARRAY[bestedu_dict.NAME], ARRAY[ `BESTEDU` ] ) AS `bestedu`, ROW( ARRAY[bestedu_dict.NAME], ARRAY[ `BESTEDU` ] ) AS `highest`, ROW( ARRAY[bestpropost_dict.NAME], ARRAY[ `BESTPROPOST` ] ) AS `bestpropost`, ROW( ARRAY[ `POSTIONS` ], ARRAY[ `POSTIONS` ] ) AS `postions`, ROW( ARRAY[ `POLITICSFACES` ], ARRAY[ `POLITICSFACES` ] ) AS `politicsfaces`, ROW( ARRAY[ `WORKPROF` ], ARRAY[ `WORKPROF` ] ) AS `workprof`, ROW( ARRAY[bestdegree_dict.NAME], ARRAY[ `BESTDEGREE` ] ) AS `bestdegree`, ROW( ARRAY[ `CONTRACTUNIT` ], ARRAY[ `CONTRACTUNIT` ] ) AS `contractunit`, ROW(ARRAY[ `PHOTO` ], ARRAY[ `PHOTO` ]) AS `photo`, ROW( ARRAY[ `MAINPROFCOTEGORY` ], ARRAY[ `MAINPROFCOTEGORY` ] ) AS `mainprofcotegory`, ROW( ARRAY[ `RECRUITMENT` ], ARRAY[ `RECRUITMENT` ] ) AS `recruitment`, ROW( ARRAY[ `DEPOSITUNIT` ], ARRAY[ `DEPOSITUNIT` ] ) AS `depositunit`, ROW( ARRAY[ `RETIREMENTDATE` ], ARRAY[ `RETIREMENTDATE` ] ) AS `retirementdate`, ROW( ARRAY[ `POSITIONGRADE` ], ARRAY[ `POSITIONGRADE` ] ) AS `positiongrade`, ROW( ARRAY[ `RETIREMENTORG` ], ARRAY[ `RETIREMENTORG` ] ) AS `retirementorg`, ROW( ARRAY[ `RETIREMENTPOSITION` ], ARRAY[ `RETIREMENTPOSITION` ] ) AS `retirementposition`, ROW( ARRAY[ `EMPIDENTITY` ], ARRAY[ `EMPIDENTITY` ] ) AS `empidentity`, ROW( ARRAY[ `V1202_HR_EMP_BASICINFO`.`STATE` ], ARRAY[ `V1202_HR_EMP_BASICINFO`.`STATE` ] ) AS `state`, ROW( ARRAY[ `STUDYPROF` ], ARRAY[ `STUDYPROF` ] ) AS `studyprof`, ROW( ARRAY[ `SOCIALTYPE1` ], ARRAY[ `SOCIALTYPE1` ] ) AS `socialtype1`, ROW( ARRAY[ `SOCIALCODE1` ], ARRAY[ `SOCIALCODE1` ] ) AS `socialcode1`, ROW( ARRAY[ `SOCIALTYPE2` ], ARRAY[ `SOCIALTYPE2` ] ) AS `socialtype2`, ROW( ARRAY[ `SOCIALCODE2` ], ARRAY[ `SOCIALCODE2` ] ) AS `socialcode2`, ROW( ARRAY[ `ANNUITYNO` ], ARRAY[ `ANNUITYNO` ] ) AS `annuityno`, ROW( ARRAY[ `HOUSINGFUND` ], ARRAY[ `HOUSINGFUND` ] ) AS `housingfund`, ROW(ARRAY[ `NOTE` ], ARRAY[ `NOTE` ]) AS `note`, ROW( ARRAY[ `TECHPROF` ], ARRAY[ `TECHPROF` ] ) AS `techprof`, ROW( ARRAY[ `LANDLINE_TELEPHONE_NUMBER` ], ARRAY[ `LANDLINE_TELEPHONE_NUMBER` ] ) AS `landline_telephone_number`, ROW(ARRAY[ `FAX` ], ARRAY[ `FAX` ]) AS `fax`, ROW( ARRAY[ `ROOM_NUMBER` ], ARRAY[ `ROOM_NUMBER` ] ) AS `room_number`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `issolve`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `health`, ROW( ARRAY[ `GLOBALROAMING` ], ARRAY[ `GLOBALROAMING` ] ) AS `globalroaming`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `proftechqua_no`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `sno`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `dept_rules`, ROW( ARRAY[ `PERSONNELCATEGORY` ], ARRAY[ `PERSONNELCATEGORY` ] ) AS `personnelcategory`, ROW( ARRAY[ `HIERARCHY` ], ARRAY[ `HIERARCHY` ] ) AS `hierarchy`, ROW( ARRAY[ `CTRANK` ], ARRAY[ `CTRANK` ] ) AS `ctrank`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `entercccctime`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `entrtwostagetime`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `foreignlevel`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `interruptedtime`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `entercttime`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `enterctmode`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `socialstartmonth`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `gjjstartmonth`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `salaryscale`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `payroll`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `isgzsb`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `isgzgjj`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `isprimaryqynj`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `startingtime`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `qynjistransfer`, ROW( ARRAY[ `SHJJOBNUMBER` ], ARRAY[ `SHJJOBNUMBER` ] ) AS `shjjobnumber`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `shjrank`, ROW( ARRAY[ `SHJEMPTYPE` ], ARRAY[ `SHJEMPTYPE` ] ) AS `shjemptype`, ROW( ARRAY[ `SHJTALENTLEVEL` ], ARRAY[ `SHJTALENTLEVEL` ] ) AS `shjtalentlevel`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `shjtalenttype`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `shjtalentcategory`, ROW( ARRAY[ `SHJDUTYSTATION` ], ARRAY[ `SHJDUTYSTATION` ] ) AS `shjdutystation`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `tagstatus`, ROW( ARRAY[ `SHJ_ZYTXRC` ], ARRAY[ `SHJ_ZYTXRC` ] ) AS `shj_zytxrc`, ROW( ARRAY[ `SHJ_WDYW` ], ARRAY[ `SHJ_WDYW` ] ) AS `shj_wdyw`, ROW( ARRAY[ `SHJ_JWRY` ], ARRAY[ `SHJ_JWRY` ] ) AS `shj_jwry`, ROW( ARRAY[ `SHJ_PQZ` ], ARRAY[ `SHJ_PQZ` ] ) AS `shj_pqz`, ROW( ARRAY[ `SHJ_RCGX` ], ARRAY[ `SHJ_RCGX` ] ) AS `shj_rcgx`, ROW( ARRAY[ `SHJ_ISPRO` ], ARRAY[ `SHJ_ISPRO` ] ) AS `shj_ispro`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `tagstatus_time`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `isarmycadres`, ROW( CAST(ARRAY[ '' ] AS ARRAY < STRING >), CAST(ARRAY[ '' ] AS ARRAY < STRING >) ) AS `transferplace`, ROW( CAST( `WORKING_COID_NAME` AS ARRAY < STRING > ), CAST( `WORKING_COID_ORULE` AS ARRAY < STRING > ) ) AS `working_coid_name`, ROW( CAST( `WORKING_COID_ORULE` AS ARRAY < STRING > ), CAST( `WORKING_COID_ORULE` AS ARRAY < STRING > ) ) AS `working_coid_orule`, ROW( CAST( `WORKING_DEPT_NAME` AS ARRAY < STRING > ), CAST( `WORKING_DEPT_ORULE` AS ARRAY < STRING > ) ) AS `working_dept_name`, ROW( CAST( `WORKING_DEPT_ORULE` AS ARRAY < STRING > ), CAST( `WORKING_DEPT_ORULE` AS ARRAY < STRING > ) ) AS `working_dept_orule`, ROW( CAST(`POST` AS ARRAY < STRING >), CAST(`POST` AS ARRAY < STRING >) ) AS `post`, ROW( CAST( `POSITIONGRADENORM_NAME` AS ARRAY < STRING > ), CAST( `POSITIONGRADENORM` AS ARRAY < STRING > ) ) AS `positiongradenorm`, ROW( CAST( `EDUCATION_NAME` AS ARRAY < STRING > ), ARRAY[ `EDUCATION` ] ) AS `education`, ROW( CAST(`DEGREE_NAME` AS ARRAY < STRING >), ARRAY[ `DEGREE` ] ) AS `degree`, ROW( CAST(`COLLEGE_NAME` AS ARRAY < STRING >), ARRAY[ `COLLEGE` ] ) AS `college`, ROW( ARRAY[ `PROFNAME` ], ARRAY[ `PROFNAME` ] ) AS `profname`, ROW( CAST( `PROFTECHQUA_NAME` AS ARRAY < STRING > ), ARRAY[ `PROFTECHQUA` ] ) AS `proftechqua`, ROW( CAST( `MAINPROF0_NAME` AS ARRAY < STRING > ), CAST(`MAINPROF0` AS ARRAY < STRING >) ) AS `mainprof0`, ROW( CAST(`SAFE_NAME` AS ARRAY < STRING >), CAST(`SAFE_CODE` AS ARRAY < STRING >) ) AS `safe_code`, ROW( CAST(`OTHER_NAME` AS ARRAY < STRING >), CAST(`OTHER_CODE` AS ARRAY < STRING >) ) AS `other_code` FROM `V1202_HR_EMP_BASICINFO` LEFT JOIN `HR_SOURCE_PART_MAINORG` ON `EMPID` = `ORG_EMPID` LEFT JOIN `HR_SOURCE_PART_BESTEDU` ON `EMPID` = `EDU_EMPID` LEFT JOIN `HR_SOURCE_PART_BESTPROPOST` ON `EMPID` = `QUA_EMPID` LEFT JOIN `HR_SOURCE_PART_BESTQUACERTINFOMAINPROF` ON `EMPID` = `MAIN_EMPID` LEFT JOIN `HR_SOURCE_PART_QUACERTINFOSAFE` ON `EMPID` = `SAFE_EMPID` LEFT JOIN `HR_SOURCE_PART_QUACERTINFOOTHER` ON `EMPID` = `OTHER_EMPID` LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '1011871' ) AS `bestdegree_dict` ON (bestdegree_dict.CODE = V1202_HR_EMP_BASICINFO.BESTDEGREE) LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '1011872' ) AS `bestedu_dict` ON (bestedu_dict.CODE = V1202_HR_EMP_BASICINFO.BESTEDU) LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '101331' ) AS `bestpropost_dict` ON (bestpropost_dict.CODE = V1202_HR_EMP_BASICINFO.BESTPROPOST) LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '101474' ) AS `resnature_dict` ON (resnature_dict.CODE = V1202_HR_EMP_BASICINFO.RESNATURE) LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '101474' ) AS `nativeplace_dict` ON (nativeplace_dict.CODE = V1202_HR_EMP_BASICINFO.NATIVEPLACE) LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '101474' ) AS `birthplace_dict` ON (birthplace_dict.CODE = V1202_HR_EMP_BASICINFO.BIRTHPLACE) LEFT JOIN ( SELECT CODE, NAME FROM `V1202_WAF_CORE_DICTITEM` WHERE `DID` = '101474' ) AS `resplace_dict` ON (resplace_dict.CODE = V1202_HR_EMP_BASICINFO.RESPLACE);
