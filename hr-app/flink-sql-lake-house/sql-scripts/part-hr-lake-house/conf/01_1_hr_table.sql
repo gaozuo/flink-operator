@@ -1692,3 +1692,220 @@ WITH (
     'scan.startup.mode' = 'earliest-offset',
     'topic' = 'HR.HROUTPUT.HR_TV2_EMP_TAG_INS'
 );
+
+CREATE TABLE `TECHNOLOGY_HJQK`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+    `BJJG`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT,
+    `HJSJ`               VARCHAR(2147483647),
+    `JXDJ`        		 VARCHAR(2147483647),
+    `JXLB`               VARCHAR(2147483647),
+    `LAST_UPDATE_TIME`   BIGINT,
+    `PM`                 VARCHAR(2147483647),
+	`RYBM`               VARCHAR(2147483647),
+	`XMMC`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_HJQK'
+);
+
+CREATE TABLE `TECHNOLOGY_ZL`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+    `CGLB`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `PM`                 VARCHAR(2147483647),
+	`RYBM`                 VARCHAR(2147483647),
+	`ZLMC`                 VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_ZL'
+);
+
+CREATE TABLE `TECHNOLOGY_BZGF`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`BZJB`               VARCHAR(2147483647),
+    `BZMC`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `CGLB`               VARCHAR(2147483647),
+	`RYBM`               VARCHAR(2147483647),
+	`PM`                 VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_BZGF'
+);
+
+CREATE TABLE `TECHNOLOGY_LW`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`CGLB`               VARCHAR(2147483647),
+    `FBRQ`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `LWBT`               VARCHAR(2147483647),
+	`LWFL`               VARCHAR(2147483647),
+	`PM`                 VARCHAR(2147483647),
+	`RYBM`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_LW'
+);
+
+CREATE TABLE `TECHNOLOGY_ZZ`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`CBRQ`               VARCHAR(2147483647),
+    `CBS`                VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `CGLB`               VARCHAR(2147483647),
+	`PM`                 VARCHAR(2147483647),
+	`RYBM`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_ZZ'
+);
+
+CREATE TABLE `TECHNOLOGY_GJKJJHXM`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`RYBM`               VARCHAR(2147483647),
+    `WCSJ`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `XMLX`               VARCHAR(2147483647),
+	`XMMC`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_GJKJJHXM'
+);
+
+CREATE TABLE `TECHNOLOGY_ZJJTXMK`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`RYBM`               VARCHAR(2147483647),
+    `WCSJ`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `XMLX`               VARCHAR(2147483647),
+	`XMMC`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_ZJJTXMK'
+);
+
+CREATE TABLE `TECHNOLOGY_SBJKT`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`RYBM`               VARCHAR(2147483647),
+    `WCSJ`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `XMLX`               VARCHAR(2147483647),
+	`XMMC`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_SBJKT'
+);
+
+CREATE TABLE `TECHNOLOGY_HEKTJBXX`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`RYBM`               VARCHAR(2147483647),
+    `WCSJ`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `XMLX`               VARCHAR(2147483647),
+	`XMMC`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_HEKTJBXX'
+);
+
+CREATE TABLE `TECHNOLOGY_ZZLXKT`
+(
+	`ID`                 VARCHAR(2147483647) NOT NULL,
+	`RYBM`               VARCHAR(2147483647),
+    `WCSJ`               VARCHAR(2147483647),
+    `CREATE_TIME`     	 BIGINT ,
+    `LAST_UPDATE_TIME`   BIGINT,
+    `XMLX`               VARCHAR(2147483647),
+	`XMMC`               VARCHAR(2147483647),
+    PRIMARY KEY (`ID`) NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_ZZLXKT'
+);
