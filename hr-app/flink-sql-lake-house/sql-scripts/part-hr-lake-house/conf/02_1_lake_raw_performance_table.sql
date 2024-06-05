@@ -53,13 +53,12 @@ WITH (
     'table.type' = 'COPY_ON_WRITE',
     'read.streaming.enabled' = 'true', -- this option enable the streaming read
     'read.streaming.check-interval' = '4', -- specifies the check interval for finding new source commits, default 60s.
+    'read.start-commit' = 'earliest',
     'cdc.enabled' = 'true',
     'compaction.delta_seconds' = '340',
     'compaction.max_memory' = '100',
     --'compaction.tasks' = '4',
-    'compaction.trigger.strategy' = 'num_or_time',
-    'hudi.parquet.avro.add-list-element-records' = 'false',
-    'hudi.parquet.avro.write-old-list-structure' = 'false'
+    'compaction.trigger.strategy' = 'num_or_time'
     --'write.tasks' = '6',
     --'read.tasks' = '4',
     --'write.task.max.size' = '256.0'
