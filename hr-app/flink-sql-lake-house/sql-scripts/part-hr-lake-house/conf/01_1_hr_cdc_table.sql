@@ -1695,7 +1695,7 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_HJQK`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
+    `ID`                 VARCHAR(2147483647) NOT NULL,
     `BJJG`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT,
     `HJSJ`               VARCHAR(2147483647),
@@ -1703,8 +1703,8 @@ CREATE TABLE `TECHNOLOGY_HJQK`
     `JXLB`               VARCHAR(2147483647),
     `LAST_UPDATE_TIME`   BIGINT,
     `PM`                 VARCHAR(2147483647),
-	`RYBM`               VARCHAR(2147483647),
-	`XMMC`               VARCHAR(2147483647),
+    `RYBM`               VARCHAR(2147483647),
+    `XMMC`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1719,13 +1719,13 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_ZL`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
+    `ID`                 VARCHAR(2147483647) NOT NULL,
     `CGLB`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `PM`                 VARCHAR(2147483647),
-	`RYBM`                 VARCHAR(2147483647),
-	`ZLMC`                 VARCHAR(2147483647),
+    `RYBM`                 VARCHAR(2147483647),
+    `ZLMC`                 VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1740,14 +1740,14 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_BZGF`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`BZJB`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL,
+    `BZJB`               VARCHAR(2147483647),
     `BZMC`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `CGLB`               VARCHAR(2147483647),
-	`RYBM`               VARCHAR(2147483647),
-	`PM`                 VARCHAR(2147483647),
+    `RYBM`               VARCHAR(2147483647),
+    `PM`                 VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1762,15 +1762,15 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_LW`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`CGLB`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL,
+    `CGLB`               VARCHAR(2147483647),
     `FBRQ`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `LWBT`               VARCHAR(2147483647),
-	`LWFL`               VARCHAR(2147483647),
-	`PM`                 VARCHAR(2147483647),
-	`RYBM`               VARCHAR(2147483647),
+    `LWFL`               VARCHAR(2147483647),
+    `PM`                 VARCHAR(2147483647),
+    `RYBM`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1785,14 +1785,14 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_ZZ`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`CBRQ`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL,
+    `CBRQ`               VARCHAR(2147483647),
     `CBS`                VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `CGLB`               VARCHAR(2147483647),
-	`PM`                 VARCHAR(2147483647),
-	`RYBM`               VARCHAR(2147483647),
+    `PM`                 VARCHAR(2147483647),
+    `RYBM`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1807,13 +1807,13 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_GJKJJHXM`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`RYBM`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL,
+    `RYBM`               VARCHAR(2147483647),
     `WCSJ`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `XMLX`               VARCHAR(2147483647),
-	`XMMC`               VARCHAR(2147483647),
+    `XMMC`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1828,13 +1828,13 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_ZJJTXMK`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`RYBM`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL,
+    `RYBM`               VARCHAR(2147483647),
     `WCSJ`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `XMLX`               VARCHAR(2147483647),
-	`XMMC`               VARCHAR(2147483647),
+    `XMMC`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1849,13 +1849,13 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_SBJKT`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`RYBM`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL,
+    `RYBM`               VARCHAR(2147483647),
     `WCSJ`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `XMLX`               VARCHAR(2147483647),
-	`XMMC`               VARCHAR(2147483647),
+    `XMMC`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
@@ -1891,13 +1891,13 @@ WITH (
 
 CREATE TABLE `TECHNOLOGY_ZZLXKT`
 (
-	`ID`                 VARCHAR(2147483647) NOT NULL,
-	`RYBM`               VARCHAR(2147483647),
+    `ID`                 VARCHAR(2147483647) NOT NULL, 
+    `RYBM`               VARCHAR(2147483647),
     `WCSJ`               VARCHAR(2147483647),
     `CREATE_TIME`     	 BIGINT ,
     `LAST_UPDATE_TIME`   BIGINT,
     `XMLX`               VARCHAR(2147483647),
-	`XMMC`               VARCHAR(2147483647),
+    `XMMC`               VARCHAR(2147483647),
     PRIMARY KEY (`ID`) NOT ENFORCED
 )
 WITH (
