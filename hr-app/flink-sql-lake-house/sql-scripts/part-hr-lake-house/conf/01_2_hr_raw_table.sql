@@ -38,22 +38,3 @@ CREATE TABLE `RAW_HR_EMP_PROFRESULTPATENTINFO`
         'username' ='hrorg_1217' ,
         'password' ='rx5Hog'
         );
-
-CREATE TABLE `TECHNOLOGY_HR_MAPPING`
-(
-    `ID`                VARCHAR(2147483647) NOT NULL,
-    `TECHNOLOGY_TYPE`   VARCHAR(2147483647),
-    `TECHNOLOGY_CODE`   VARCHAR(2147483647),
-    `HR_TYPE`           VARCHAR(2147483647),
-    `HR_CODE`           VARCHAR(2147483647),
-    `HR_NAME`           VARCHAR(2147483647),
-    PRIMARY KEY (`ID`)  NOT ENFORCED
-)
-    WITH (
-        'connector'  = 'jdbc' ,
-        'driver'  = 'oracle.jdbc.driver.OracleDriver' ,
-        'url'  = 'jdbc:oracle:thin:@10.201.218.54:1521/hr' ,
-        'table-name'  = 'hr_emp_profresultpatentinfo'  ,
-        'username' ='hrorg_1217' ,
-        'password' ='rx5Hog'
-        );

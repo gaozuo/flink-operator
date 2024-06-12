@@ -1894,7 +1894,7 @@ CREATE TABLE `CDC_TECHNOLOGY_ZZLXKT`
     `ID`                 VARCHAR(2147483647) NOT NULL, 
     `RYBM`               VARCHAR(2147483647),
     `WCSJ`               VARCHAR(2147483647),
-    `CREATE_TIME`     	 BIGINT ,
+    `CREATE_TIME`     	 BIGINT,
     `LAST_UPDATE_TIME`   BIGINT,
     `XMLX`               VARCHAR(2147483647),
     `XMMC`               VARCHAR(2147483647),
@@ -1908,6 +1908,26 @@ WITH (
     'properties.group.id' = 'flink-cdc',
     'scan.startup.mode' = 'earliest-offset',
     'topic' = 'HR.HROUTPUT.TECHNOLOGY_ZZLXKT'
+);
+
+CREATE TABLE `CDC_TECHNOLOGY_HR_MAPPING`
+(
+    `ID`                VARCHAR(2147483647) NOT NULL,
+    `TECHNOLOGY_TYPE`   VARCHAR(2147483647),
+    `TECHNOLOGY_CODE`   VARCHAR(2147483647),
+    `HR_TYPE`           VARCHAR(2147483647),
+    `HR_CODE`           VARCHAR(2147483647),
+    `HR_NAME`           VARCHAR(2147483647),
+    PRIMARY KEY (`ID`)  NOT ENFORCED
+)
+WITH (
+    'connector' = 'kafka',
+    'debezium-avro-confluent.schema-registry.url' = 'http://kafka-stream-registry-cp-schema-registry.kafka-cluster:8081',
+    'format' = 'debezium-avro-confluent',
+    'properties.bootstrap.servers' = 'kafka-stream-kafka-bootstrap.kafka-cluster:9092',
+    'properties.group.id' = 'flink-cdc',
+    'scan.startup.mode' = 'earliest-offset',
+    'topic' = 'HR.HROUTPUT.TECHNOLOGY_HR_MAPPING'
 );
 
 CREATE TABLE `CDC_PROJECT_MANAGER_PERFORMANCE` (
